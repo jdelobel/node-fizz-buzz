@@ -1,0 +1,28 @@
+{
+  "name": "fizz-buzz",
+  "version": "1.0.0",
+  "description": "Simple tdd training using node.js with jasmine",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "nyc jasmine",
+    "test-tdd": "nodemon --exec nyc jasmine"
+  },
+  "keywords": [
+    "node.js",
+    "tdd",
+    "jasmine"
+  ],
+  "author": "jdelobel",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^2.8.0",
+    "nodemon": "^1.14.8",
+    "nyc": "^11.4.1"
+  },
+  "nyc": {
+    "exclude": [
+      "**/*.spec.js"
+    ]
+  }
+}
